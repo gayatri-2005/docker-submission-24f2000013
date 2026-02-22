@@ -25,5 +25,5 @@ jobs:
         with:
           context: .
           push: true
-          # Replace 'my-image' with your desired repository name
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-data-science-app:24f2000013, ${{ secrets.DOCKERHUB_USERNAME }}/my-data-science-app:latest
+          # Using the roll number as the repository name to ensure portal discovery
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/24f2000013:24f2000013, ${{ secrets.DOCKERHUB_USERNAME }}/24f2000013:latest
